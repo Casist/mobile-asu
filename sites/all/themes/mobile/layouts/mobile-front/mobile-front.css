@@ -1,0 +1,167 @@
+/**
+ * @file
+ * Mobile Alternative panel layout
+**/
+/* Admin UI */
+div.panels-ipe-placeholder {
+    margin-top: 1.5em;
+}
+.page-admin .gp-front .column {
+    margin-bottom: 1em;
+}
+.page-admin .gp-front .section-first #panels-dnd-main div.panel-region {
+    background-color: #ffecee ;
+}
+.page-admin .gp-front .section-last #panels-dnd-main div.panel-region {
+    background-color: #ecffef ;
+}
+.panels-ipe-editing .gp-front .section-first div.panels-ipe-placeholder {
+    background-color: #ffecee;
+}
+.panels-ipe-editing .beast .section-last div.panels-ipe-placeholder {
+    background-color: #ecffef;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+div.panels-ipe-placeholder h3 {
+    width: 225px;
+}
+
+@media only screen and (max-width: 480px) {
+    .gp-front-double-column  .column,
+    .gp-front-triple-column .column {
+        width: 100%;
+        float: none;
+    }
+
+}
+
+/* Template CSS */
+
+.row.mobile-alternate-double-column {
+    padding-top: 55px;
+    padding-bottom: 55px;
+    display: flex;
+    align-items: center;
+}
+
+.mobile-alternate p {
+    font-size: 19px;
+}
+.mobile-front-double-column, .mobile-front-triple-column {
+    padding-top: 65px !important;
+    padding-bottom: 75px !important;
+}
+.column.col-xs-12.col-md-4.mobile-front-fourth-row4-col3 {
+    text-align: right;
+}
+
+/* Custom ASU Spotlight Appearance - BANNER (HEADER) */
+.section-post-header .flexslider .slides img {
+    -moz-user-select: none;
+    object-fit: cover;
+    object-position: center;
+}
+.section-post-header .flexslider .slides .slidecontainer p {
+    font-size: 52px;
+    white-space: inherit;
+}
+
+/* Custom ASU Spotlight, Second */
+.column.col-xs-12.mobile-front-second-row2-col1.row-full, .row.row-2.mobile-front-single-column {
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100%;
+    max-width: inherit !important;
+    position:relative;
+}
+.row-2.mobile-front-single-column .mobile-front-second-row2-col1 .pane-content {
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100%;
+    max-width: inherit !important;
+    position: relative;
+}
+
+.mobile-front-second-row2-col1 {
+    padding: 0;
+}
+.column.col-xs-12.mobile-front-second-row2-col2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    transform: translate(-50%, -50%);
+}
+.column.col-xs-12.mobile-front-second-row2-col2 .panels-ipe-sort-container {
+    max-width: 500px;
+}
+
+/* Testimonials */
+.testimonials-front {
+    width: 757px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.testimonials-front .views-field.views-field-body {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 25px;
+}
+.testimonials-front i.fa {
+    font-size: 48px;
+    padding-bottom: 15px;
+    color: #FFC627;
+}
+.testimonials-front .yellowbanner {
+    width: 65px;
+    background-color: #ffc627;
+    margin: auto;
+    height: 5px;
+    margin-bottom: 15px;
+}
+.testimonials-front .views-field-title {
+    font-weight: 600;
+}
+
+/* Mobile Corrections */
+@media (max-width: 770px) {
+    .mobile-front-second-row2-col1 img {
+        height: 500px !important;
+        object-fit: cover;
+    }
+    .column.col-xs-12.mobile-front-second-row2-col2 .panels-ipe-sort-container {
+        max-width: 400px;
+    }
+    .section-post-header .flexslider .slides img {
+        height: 300px;
+    }
+    .column.col-xs-12.col-md-6.mobile-front-first-row1-col1 .panels-ipe-sort-container {
+        width: 75%;
+        margin: auto;
+    }
+}
+@media (max-width: 430px) {
+    .mobile-front-second-row2-col1 img {
+        height: 600px !important;
+    }
+    .testimonials-front {
+        width: initial;
+    }
+    .column.col-xs-12.mobile-front-second-row2-col2 h2 {
+        font-size: 24px;
+    }
+    .column.col-xs-12.mobile-front-second-row2-col2 .panels-ipe-sort-container {
+        max-width: 300px;
+        margin-top: 70px;
+    }
+}
+
+

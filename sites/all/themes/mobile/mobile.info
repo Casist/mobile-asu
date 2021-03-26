@@ -1,0 +1,21 @@
+name = Mobile ASU Sub Theme
+description = A Kalatheme subtheme powered by Twitter Bootstrap & Science. 
+base theme = college 
+core = 7.x 
+
+regions[content] = Content 
+
+settings[toggle_logo] = 0
+
+stylesheets[all][] = css/mobile.css
+
+; stylesheets[all][] = css/font-awesome.min.css
+
+regions[header] = Header
+regions[menu] = Menu
+regions[content] = Content
+regions[prefooter] = Prefooter
+regions[footer] = Footer
+regions[closure] = Closure
+
+plugins[panels][layouts] = layouts

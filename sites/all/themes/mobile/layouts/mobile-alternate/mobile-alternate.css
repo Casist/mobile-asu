@@ -1,0 +1,95 @@
+/**
+ * @file
+ * Mobile Alternative panel layout
+**/
+/* Admin UI */
+div.panels-ipe-placeholder {
+    margin-top: 1.5em;
+}
+.page-admin .gp-front .column {
+    margin-bottom: 1em;
+}
+.page-admin .gp-front .section-first #panels-dnd-main div.panel-region {
+    background-color: #ffecee ;
+}
+.page-admin .gp-front .section-last #panels-dnd-main div.panel-region {
+    background-color: #ecffef ;
+}
+.panels-ipe-editing .gp-front .section-first div.panels-ipe-placeholder {
+    background-color: #ffecee;
+}
+.panels-ipe-editing .beast .section-last div.panels-ipe-placeholder {
+    background-color: #ecffef;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+div.panels-ipe-placeholder h3 {
+    width: 225px;
+}
+
+@media only screen and (max-width: 480px) {
+    .gp-front-double-column  .column,
+    .gp-front-triple-column .column {
+        width: 100%;
+        float: none;
+    }
+
+}
+
+/* Template CSS */
+
+.row.mobile-alternate-double-column {
+    padding-top: 55px;
+    padding-bottom: 55px;
+    display: flex;
+    align-items: center;
+}
+
+.mobile-alternate p {
+    font-size: 19px;
+}
+
+/* Custom ASU Spotlight Appearance - BANNER (HEADER) */
+.section-post-header .flexslider .slides img {
+    height: 250px !important;
+    -moz-user-select: none;
+    object-fit: cover;
+    object-position: center;
+}
+.section-post-header .flexslider .slides .slidecontainer p {
+    font-size: 45px;
+}
+
+/* Mobile Corrections */
+@media (max-width: 770px) {
+    .row.mobile-alternate-double-column {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    .section-post-header .flexslider .slides .slidecontainer p {
+        font-size: 40px !important;
+    }
+    .mobile-alternate-double-column .column.col-md-6 {
+        width: 49% !important;
+    }
+}
+@media (max-width: 430px) {
+    .section-post-header .flexslider .slides img {
+        height: 350px !important;
+    }
+    .section-post-header .flexslider .slides .slidecontainer p {
+        white-space: inherit;
+    }
+    .mobile-alternate-double-column .column.col-md-6 {
+        width: 100% !important;
+    }
+    .row.mobile-alternate-double-column {
+        display: inline-block;
+    }
+}
+
+
